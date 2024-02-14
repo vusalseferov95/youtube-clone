@@ -1,9 +1,9 @@
 .container {
     margin: 0 auto;
-    width: 1280px;
-    height: 1200px;
+    width: 1330px;
     color: rgba(255, 255, 255, 1);
     background-color: #000;
+    display: flex;
 }
 
 .page-left {
@@ -12,6 +12,7 @@
     background-color: rgba(33, 33, 33, 1);
     width: 220px;
     padding: 20px 0;
+    position: fixed;
 }
 
 .logo {
@@ -72,4 +73,247 @@
     letter-spacing: 0em;
     text-align: left;
     color: rgba(255, 255, 255, 1);
+}
+
+.page-right {
+    width: 1060px;
+    padding: 10px;
+    margin-left: 220px;
+}
+
+.page-head {
+    display: flex;
+    align-items: center;
+    padding-left: 131px;
+    padding-top: 10px;
+}
+
+.head-form {
+    width: 534px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(50, 50, 50, 1);
+    border-radius: 5px;
+}
+
+.head-input {
+    background: transparent;
+    border: none;
+    width: 478px;
+    height: 36px;
+    border-radius: 5px;
+}
+
+.head-input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: rgba(170, 170, 170, 1);
+}
+
+.head-input:focus {
+    outline: none;
+    color: #fff;
+    background-color: rgba(33, 33, 33, 1);
+    width: 478px;
+    height: 36px;
+}
+
+.btn-search {
+    width: 56px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(50, 50, 50, 1);
+    background-color: rgba(33, 33, 33, 1);
+    border-radius: 5px;
+}
+
+.btn-search:hover {
+    cursor: pointer;
+}
+
+.btn-voice {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    margin-left: 10px;
+}
+
+.btn-voice:hover {
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 185px;
+}
+
+.profile img:nth-child(4) {
+    margin-left: 10px;
+}
+
+.profile img:hover {
+    cursor: pointer;
+}
+
+.page-main {
+    display: flex;
+    flex-direction: column;
+    width: 1060px;
+}
+
+.line2 {
+    width: 1050px;
+    border-bottom: 1px solid rgba(56, 56, 56, 1);
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.categories-shadow {
+    position: absolute;
+    right: 0;
+    width: 70px;
+    height: 50px;
+}
+
+.categories-shadow:hover {
+    cursor: pointer;
+}
+
+.btn-categories {
+    width: auto;
+    height: 30px;
+    padding: 8px, 12px;
+    border-radius: 30px;
+    border: 1px solid rgba(71, 71, 71, 1);
+    background: rgba(56, 56, 56, 1);
+    color: rgba(255, 255, 255, 1);
+    text-wrap: nowrap;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.btn-categories:hover {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    border: none;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: 242px 242px 242px 242px;
+    column-gap: 14px;
+    row-gap: 40px;
+}
+
+.videos-link {
+    width: 242px;
+    height: 220px;
+}
+
+.video-info {
+    margin-top: 10px;
+}
+
+.channel-profile {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.channel-profile img {
+    width: 32px;
+    height: 32px;
+    border-radius: 32px;
+    object-fit: cover;
+}
+
+.channel-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.channel-info h3 {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    letter-spacing: -0.05em;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+}
+
+.channel-name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-top: 10px;
+}
+
+.channel-name h4 {
+    width: auto;
+    height: 17px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: rgba(170, 170, 170, 1);
+}
+
+.channel-name img {
+    width: 10px;
+    height: 10px;
+}
+
+.view-and-date {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.view-and-date span {
+    width: auto;
+    height: 17px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: -0.1em;
+    text-align: left;
+    color: rgba(170, 170, 170, 1);
+}
+
+.view-and-date img {
+    width: 3px;
+    height: 3px;
 }
